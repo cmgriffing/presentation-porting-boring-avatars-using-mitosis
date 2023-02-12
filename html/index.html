@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>01-intro</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="porting-boring-avatars-using-mitosis" class="title-slide slide level1"><h1>Porting Boring Avatars using Mitosis</h1></section><section id="about-me" class="slide level2">
+<h2>About Me</h2>
+<p>Senior Frontend Engineer at <a href="https://www.fairwinds.com/">Fairwinds</a></p>
+<p><code>cmgriffing</code> on most platforms:</p>
+<ul>
+<li><p><a href="https://twitch.tv/cmgriffing">Twitch</a></p></li>
+<li><p><a href="https://youtube.com/@cmgriffing">Youtube</a></p></li>
+<li><p><a href="https://github.com/cmgriffing">Github</a></p></li>
+<li><p><a href="https://twitter.com/cmgriffing">Twitter</a></p></li>
+</ul>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<p><img data-src="./assets/cell-mitosis.gif" /></p>
+</section><section id="what-did-one-cell-say-to-his-sister-cell-when-she-stepped-on-his-toe" class="slide level2">
+<h2>What did one cell say to his sister cell when she stepped on his toe?</h2>
+</section><section id="mitosis" class="slide level2">
+<h2>Mitosis!</h2>
+<p><img data-src="./assets/grimace.gif" /></p>
+</section></section>
+<section><section id="boring-avatars-original" class="title-slide slide level1"><h1>Boring Avatars (original)</h1></section><section id="more-fun-than-a-generic-user-icon" class="slide level2">
+<h2>More fun than a generic user icon</h2>
+<ul>
+<li>Procedurally-generated</li>
+<li>SVG (use at any size)</li>
+<li>React-only</li>
+</ul>
+<p><a href="https://boringavatars.com/">https://boringavatars.com/</a></p>
+<p><img data-src="./assets/boring-avatars-og.png" /></p>
+</section><section id="styles" class="slide level2">
+<h2>Styles</h2>
+<p><img data-src="./assets/boring-avatars-variants.png" /></p>
+</section><section id="similar-libraries" class="slide level2">
+<h2>Similar Libraries</h2>
+</section></section>
+<section><section id="other-frameworks" class="title-slide slide level1"><h1>Other Frameworks</h1></section><section id="list-of-other-libraries" class="slide level2">
+<h2>List of Other Libraries</h2>
+<ul>
+<li>Angular: <a href="https://www.npmjs.com/package/ng-boring-avatars">one</a>, <a href="https://www.npmjs.com/package/ngx-boring-avatars-12">two</a>, <a href="https://www.npmjs.com/package/ngx-boring-avatars">three</a>, <a href="https://www.npmjs.com/package/@kiot-innovations/ng-boring-avatars">four</a></li>
+<li>Svelte: <a href="https://www.npmjs.com/package/svelte-boring-avatars">svelte-boring-avatars</a></li>
+<li>Solid: <a href="https://www.npmjs.com/package/boring-avatars-solid">boring-avatars-solid</a></li>
+<li>Ember: <a href="https://www.npmjs.com/package/ember-boring-avatars">ember-boring-avatars</a></li>
+<li>Vue:
+<ul>
+<li>Vue3: <a href="https://www.npmjs.com/package/vue-boring-avatars">one</a>, <a href="https://www.npmjs.com/package/@third.chat/vue-boring-avatars">two</a></li>
+<li>Vue2: <a href="https://www.npmjs.com/package/vue2-boring-avatars">one</a>, <a href="https://www.npmjs.com/package/@schpnpls/vue2-boring-avatars">two</a>, <a href="https://www.npmjs.com/package/@third.chat/vue-boring-avatars">three</a></li>
+</ul></li>
+<li>React Native: <a href="https://www.npmjs.com/package/react-native-boring-avatars">react-native-boring-avatars</a></li>
+</ul>
+</section><section id="why-was-the-amoeba-sad" class="slide level2">
+<h2>Why was the amoeba sad?</h2>
+</section><section id="his-parents-just-split." class="slide level2">
+<h2>His parents just split.</h2>
+<p><img data-src="./assets/doc.gif" /></p>
+</section></section>
+<section><section id="react-native" class="title-slide slide level1"><h1>React Native</h1></section><section id="one-big-issue" class="slide level2">
+<h2>One Big Issue</h2>
+<p><img data-src="./assets/react-native-issue.png" /></p>
+</section><section id="why" class="slide level2">
+<h2>Why?</h2>
+<p><a href="https://github.com/software-mansion/react-native-svg">react-native-svg</a> (also used by Expo’s wrapper)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">const</span> SIZE <span class="op">=</span> <span class="dv">36</span><span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">/// ...</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="op">&lt;</span>Svg</span>
+<span id="cb1-4"><a href="#cb1-4"></a>      viewBox<span class="op">={</span><span class="st">&#39;0 0 &#39;</span> <span class="op">+</span> SIZE <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> SIZE<span class="op">}</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>      fill<span class="op">=</span><span class="st">&quot;none&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>      xmlns<span class="op">=</span><span class="st">&quot;http://www.w3.org/2000/svg&quot;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>      width<span class="op">={</span><span class="va">props</span><span class="op">.</span><span class="at">size</span><span class="op">}</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>      height<span class="op">={</span><span class="va">props</span><span class="op">.</span><span class="at">size</span><span class="op">}</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="op">&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">&lt;</span>Rect</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  x<span class="op">={</span><span class="dv">20</span> <span class="op">+</span> <span class="va">data</span><span class="op">.</span><span class="at">eyeSpread</span><span class="op">}</span></span></code></pre></div>
+<aside class="notes">
+<p>Normally this works fine.</p>
+<p>Mobile platforms, (iOS at least), do not support native SVG.</p>
+</aside>
+</section><section id="why-visual" class="slide level2">
+<h2>Why? (Visual)</h2>
+<p><img data-src="./assets/the-blurring.png" /></p>
+</section><section id="the-fix" class="slide level2">
+<h2>The Fix</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">const</span> <span class="op">{</span> name<span class="op">,</span> colors<span class="op">,</span> size <span class="op">}</span> <span class="op">=</span> props<span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="co">// ...</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="op">&lt;</span>Svg</span>
+<span id="cb3-4"><a href="#cb3-4"></a>      viewBox<span class="op">={</span><span class="st">&#39;0 0 &#39;</span> <span class="op">+</span> size <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> size<span class="op">}</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>      fill<span class="op">=</span><span class="st">&quot;none&quot;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>      width<span class="op">={</span>size<span class="op">}</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>      height<span class="op">={</span>size<span class="op">}</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>    <span class="op">&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">const</span> scaleNumber <span class="op">=</span> <span class="fu">createScaleNumber</span>(<span class="dv">36</span><span class="op">,</span> size)<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">const</span> EYE_RIGHT_X <span class="op">=</span> <span class="fu">scaleNumber</span>(<span class="dv">20</span>)<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">// ...</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="op">&lt;</span>Rect</span>
+<span id="cb4-5"><a href="#cb4-5"></a>      x<span class="op">={</span>EYE_RIGHT_X <span class="op">+</span> eyeSpread<span class="op">}</span></span></code></pre></div>
+</section><section id="my-fork" class="slide level2">
+<h2>My Fork</h2>
+<p><a href="https://github.com/cmgriffing/react-native-boring-avatars">https://github.com/cmgriffing/react-native-boring-avatars</a></p>
+</section></section>
+<section><section id="mitosis-1" class="title-slide slide level1"><h1>Mitosis</h1></section><section id="made-by-builder.io" class="slide level2">
+<h2>Made by builder.io</h2>
+<ul>
+<li>Builder.io: A Drag and Drop Visual CMS</li>
+<li>They ship SDKs for various frameworks</li>
+</ul>
+</section><section id="who-should-use-it" class="slide level2">
+<h2>Who should use it?</h2>
+<p>Three main categories:</p>
+<ul>
+<li>Design Systems Maintainers</li>
+<li>Teams using multiple web frameworks</li>
+<li>Teams building web SDKs</li>
+</ul>
+</section><section id="context" class="slide level2">
+<h2>Context</h2>
+<ul>
+<li>Experimental or unsupported in some Targets</li>
+</ul>
+</section><section id="web-components" class="slide level2">
+<h2>Web Components?</h2>
+<ul>
+<li><p>No Context specific support</p></li>
+<li><p>Not a great DX. attaching to global registry, etc</p></li>
+<li><p>Stencil is really close</p></li>
+</ul>
+</section><section id="why-do-biologists-like-to-travel" class="slide level2">
+<h2>Why do biologists like to travel?</h2>
+</section><section id="it-makes-them-more-cultured." class="slide level2">
+<h2>It makes them more cultured.</h2>
+<p><img data-src="./assets/mushroom.gif" /></p>
+</section></section>
+<section><section id="even-more-boring" class="title-slide slide level1"><h1>Even More Boring</h1></section><section id="component-example" class="slide level2">
+<h2>Component Example</h2>
+<p><img data-src="./assets/code-mitosis-beam.png" /></p>
+</section><section id="quirks" class="slide level2">
+<h2>Quirks</h2>
+<ul>
+<li>utils must be in separate file</li>
+<li>generators use string building under the hood</li>
+<li>barebones output</li>
+</ul>
+</section><section id="boilerplates" class="slide level2">
+<h2>Boilerplates</h2>
+<ul>
+<li>Vite config or other</li>
+<li>folder structure</li>
+<li>package.json templating and dependencies, etc.</li>
+</ul>
+</section><section id="mitosis-compile" class="slide level2">
+<h2>“mitosis compile”</h2>
+<ul>
+<li>Per file</li>
+<li>No knowledge of greater project (imports, etc.)</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb5-1"><a href="#cb5-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">enum</span> Target <span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>  Angular <span class="op">=</span> <span class="st">&quot;angular&quot;</span><span class="op">,</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co">// ...</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="bu">Object</span>.<span class="fu">values</span>(Target).<span class="fu">forEach</span>((target) <span class="kw">=&gt;</span> <span class="op">{</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>  <span class="co">// ...</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>  <span class="va">mitosisFiles</span><span class="op">.</span><span class="fu">forEach</span>((filePrefix) <span class="kw">=&gt;</span> <span class="op">{</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>    <span class="co">// ...</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>    <span class="kw">const</span> execCommand <span class="op">=</span> <span class="vs">`pnpm mitosis compile -t=</span><span class="sc">${</span>target<span class="sc">}</span><span class="vs"> --out=</span><span class="sc">${</span>outPath<span class="sc">}</span><span class="vs"> </span><span class="sc">${</span>inputFile<span class="sc">}</span><span class="vs"> --force`</span><span class="op">;</span></span></code></pre></div>
+</section><section id="plugins" class="slide level2">
+<h2>Plugins</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb6-1"><a href="#cb6-1"></a><span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="co">// ...</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  pre<span class="op">:</span> (code<span class="op">:</span> <span class="dt">string</span>) <span class="kw">=&gt;</span> <span class="op">{</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="kw">let</span> newCode <span class="op">=</span> code<span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a>    newCode <span class="op">=</span> <span class="va">newCode</span><span class="op">.</span><span class="fu">replace</span>(</span>
+<span id="cb6-7"><a href="#cb6-7"></a>      <span class="kw">new</span> <span class="bu">RegExp</span>(<span class="vs">`(import </span><span class="sc">\\</span><span class="vs">S+ from &quot;.</span><span class="sc">\\</span><span class="vs">/avatars</span><span class="sc">\\</span><span class="vs">/avatar-</span><span class="sc">\\</span><span class="vs">S+)&quot;;`</span><span class="op">,</span> <span class="st">&quot;gm&quot;</span>)<span class="op">,</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>      <span class="vs">`$1.component&quot;;`</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>    )<span class="op">;</span></span></code></pre></div>
+</section><section id="im-not-alone" class="slide level2">
+<h2>I’m Not Alone</h2>
+<p><a href="https://www.youtube.com/watch?v=07UW3REM6k8">https://www.youtube.com/watch?v=07UW3REM6k8</a></p>
+<p><img data-src="./assets/youtuber.png" /></p>
+</section><section id="mitosis-bugs-and-fixes" class="slide level2">
+<h2>Mitosis bugs and fixes</h2>
+<p>It’s a big surface area.</p>
+<p>Common issues I ran into:</p>
+<ul>
+<li>SVG (feFlood, stroke-width vs strokeWidth)</li>
+</ul>
+<p><img src="./assets/maintainer-kappa.png" style="max-width: 400px; height: auto;" /></p>
+</section><section id="why-did-the-scuba-diver-fail-biology" class="slide level2">
+<h2>Why did the scuba diver fail biology?</h2>
+</section><section id="he-was-below-c-level." class="slide level2">
+<h2>He was below “C” level.</h2>
+<p><img data-src="./assets/scuba.png" /></p>
+</section></section>
+<section><section id="a-moment-about-plugins" class="title-slide slide level1"><h1>A Moment About Plugins</h1></section><section id="what-they-do" class="slide level2">
+<h2>What they do</h2>
+<ul>
+<li><code>json</code>: modify parsed json structure</li>
+<li><code>code</code>: modify string output before or after prettier</li>
+</ul>
+</section><section id="lifecycle" class="slide level2">
+<h2>Lifecycle</h2>
+<ul>
+<li>mitosis parser into json</li>
+<li>plugins: json.pre</li>
+<li>plugins: json.post</li>
+<li>target generator (react/vue/etc) (a string builder)</li>
+<li>plugins: code.pre (string)</li>
+<li>prettier: if enabled for target</li>
+<li>plugins: code.post (string)</li>
+</ul>
+<aside class="notes">
+<p>I might want to create a graphic for this.</p>
+</aside>
+</section></section>
+<section><section id="even-more-boringer" class="title-slide slide level1"><h1>Even More Boringer</h1></section><section id="mitosis-build" class="slide level2">
+<h2>“mitosis build”</h2>
+<p>Fixed several Naming and File pathing issues</p>
+<ul>
+<li>Still need boilerplates</li>
+</ul>
+</section><section id="demo-sites" class="slide level2">
+<h2>Demo sites</h2>
+<ul>
+<li>Simplest starters for a static site because of GH-pages</li>
+<li>Clone of boringavatars.com</li>
+</ul>
+<p><img data-src="./assets/boring-avatars-og.png" /></p>
+</section><section id="components-for-the-demo-site" class="slide level2">
+<h2>Components for the Demo site</h2>
+<p>Sounds like a job for Mitosis!</p>
+<p><img data-src="./assets/yay.gif" /></p>
+</section><section id="result" class="slide level2">
+<h2>Result</h2>
+<p><a href="https://cmgriffing.github.io/boringer-avatars/">https://cmgriffing.github.io/boringer-avatars/</a></p>
+<p><img data-src="./assets/boringer.png" /></p>
+</section><section id="npm" class="slide level2">
+<h2>NPM</h2>
+<p><img data-src="./assets/boringer.png" /></p>
+</section><section id="producthunt" class="slide level2">
+<h2>ProductHunt</h2>
+<p><img data-src="./assets/product-hunt.png" /></p>
+</section><section id="reddit-post" class="slide level2">
+<h2>Reddit Post</h2>
+<p><img data-src="./assets/reddit.png" /></p>
+</section><section id="reddit-recap" class="slide level2">
+<h2>Reddit Recap</h2>
+<p><img data-src="./assets/reddit-top-post.png" /></p>
+</section><section id="why-are-there-so-few-biology-jokes-about-the-eye" class="slide level2">
+<h2>Why are there so few Biology jokes about the eye?</h2>
+</section><section id="because-they-keep-getting-cornea-and-cornea." class="slide level2">
+<h2>Because they keep getting cornea and cornea.</h2>
+<p><img data-src="./assets/puppet-awkward.gif" /></p>
+</section></section>
+<section><section id="wrapping-up" class="title-slide slide level1"><h1>Wrapping Up</h1></section><section id="citations" class="slide level2">
+<h2>Citations</h2>
+<ul>
+<li>Something: url to cite</li>
+</ul>
+</section></section>
+<section id="thanks" class="title-slide slide level1"><h1>Thanks</h1><script>
+/* Global Styles go here */
+
+
+
+</script>
+<style>
+.reveal pre, .reveal code {
+  background: white;
+}
+</style></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
