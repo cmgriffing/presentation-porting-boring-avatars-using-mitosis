@@ -1,5 +1,9 @@
 # Porting Boring Avatars using Mitosis
 
+##
+
+![](./assets/cell-mitosis.gif)
+
 ## About Me
 
 Senior Frontend Engineer at [Fairwinds](https://www.fairwinds.com/)
@@ -13,10 +17,6 @@ Senior Frontend Engineer at [Fairwinds](https://www.fairwinds.com/)
 - [Github](https://github.com/cmgriffing)
 
 - [Twitter](https://twitter.com/cmgriffing)
-
-##
-
-![](./assets/cell-mitosis.gif)
 
 ## What did one cell say to his sister cell when she stepped on his toe?
 

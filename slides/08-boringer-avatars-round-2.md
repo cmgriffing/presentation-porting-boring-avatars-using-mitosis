@@ -27,7 +27,11 @@ Sounds like a job for Mitosis!
 
 ## NPM
 
-![](./assets/boringer.png)
+![](./assets/npm.png)
+
+## Figma
+
+![](./assets/figma.png)
 
 ## ProductHunt
 
